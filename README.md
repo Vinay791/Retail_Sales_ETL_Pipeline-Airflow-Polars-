@@ -15,17 +15,17 @@ The pipeline:
 retail_sales_etl/
 │
 ├── data/
-│ ├── raw/ # Raw CSV files
-│ └── processed/ # Parquet & analytics output
+│   ├── raw/                # Raw CSV files
+│   └── processed/          # Parquet & analytics output
 │
 ├── scripts/
-│ ├── extract.py # Extract step
-│ ├── transform.py # Clean & analytics
-│ └── load.py # Load step
+│   ├── extract.py          # Extract step
+│   ├── transform.py        # Clean & analytics
+│   └── load.py             # Load step
 │
 ├── airflow/
-│ └── dags/
-│ └── retail_sales_etl.py
+│   └── dags/
+│       └── retail_sales_etl.py
 │
 └── README.md
 
