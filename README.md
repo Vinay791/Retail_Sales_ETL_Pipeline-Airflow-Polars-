@@ -12,8 +12,8 @@ The pipeline:
 
 ## 📂 Project Structure
 
+```
 retail_sales_etl/
-│
 ├── data/
 │   ├── raw/                # Raw CSV files
 │   └── processed/          # Parquet & analytics output
@@ -28,6 +28,8 @@ retail_sales_etl/
 │       └── retail_sales_etl.py
 │
 └── README.md
+```
+
 
 
 ---
