@@ -58,7 +58,7 @@ ecommerce_etl/
 │     └── processed/
 │           ├── extracted.parquet
 │           ├── clean_sales.parquet
-│           ├── transformed_carts.csv
+│           ├── transformed_data.csv
 │           ├── daily_sales.csv
 │           ├── revenue_by_product.csv
 │           └── customer_summary.csv
@@ -110,7 +110,7 @@ ecommerce_etl/
      |                |                 |               |
      v                v                 v               v
 daily_sales.csv  revenue_by_product.csv customer_summary.csv
-transformed_carts.csv  →  MySQL (Load Task)
+transformed_data.csv  →  MySQL (Load Task)
 ```
 
 ---
@@ -142,7 +142,7 @@ transformed_carts.csv  →  MySQL (Load Task)
 - Creates table if not exists
 - Loads transformed data into:
   ```
-  retail_db.transformed_carts
+  retail_db.transformed_data
   ```
 
 ## 4️⃣ Airflow Orchestration
